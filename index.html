@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/stylesheet.css" />
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="outer_box">
+      <div class="main_outer_box">
+        <ul class="main_box">
+          <li><h1>currency<br>exchange</h1></li>
+          <li style="color:black;">enter amount</li>
+          <li>
+            <input
+              type="text"
+              id="first-currency"
+              class="value-take-box"
+              onchange="optionChangeFirst()"
+            />
+          </li>
+          <li>
+            <ul class="exchange-box">
+              <li>
+                <select name="currency-box" id="currency-take-first" class="select-option">
+                  <option value="inr" class="first-option">inr</option>
+                </select>
+              </li>
+              <li class="fa fa-exchange"></li>
+              <li>
+                <select name="currency-box" id="currency-take-second"class="select-option">
+                  <option value="inr" class="second-option">inr</option>
+                </select>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <input
+              type="text"
+              id="second-currency"
+              class="value-take-box"
+              onchange="optionChangeSecond()"
+            />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./javascript/index.js"></script>
+  </body>
+</html>
